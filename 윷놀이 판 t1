@@ -1,0 +1,26 @@
+import tkinter as tk
+
+def draw_yutnori_board():
+    root = tk.Tk()
+    root.title("Yutnori Board")
+
+    canvas = tk.Canvas(root, width=1000, height=1000)
+    canvas.pack()
+
+    canvas.create_rectangle(50, 10, 490, 50, fill="lightgray")
+    canvas.create_rectangle(50, 10, 450, 50, fill="snow")
+    canvas.create_rectangle(50, 10, 410, 50, fill="lightgray")
+    canvas.create_rectangle(50, 10, 370, 50, fill="snow")
+    canvas.create_rectangle(50, 10, 330, 50, fill="lightgray")
+    canvas.create_rectangle(50, 10, 290, 50, fill="snow")
+    canvas.create_rectangle(50, 10, 250, 50, fill="lightgray")
+    canvas.create_rectangle(50, 10, 210, 50, fill="snow")
+    canvas.create_rectangle(50, 10, 170, 50, fill="lightgray")
+    canvas.create_rectangle(50, 10, 130, 50, fill="snow")
+    canvas.create_rectangle(50, 10, 90, 50, fill="lightgray")
+
+
+
+    root.mainloop()
+
+draw_yutnori_board()
