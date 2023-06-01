@@ -1,0 +1,26 @@
+map = BSTMap()
+while True:
+    command = input("삽입(i), 탐색(s), 삭제(d), 출력(p), 종료(q):  ")
+
+    if command == 'i':
+        name = input("친구의 이름: ")
+        phone_number = input("친구의 전화번호: ")
+        map.insert(name, phone_number)
+        
+    elif command == 's':
+        name = input("친구의 이름: ")
+        result = map.search(name)
+        if result is None:
+            print("등록되지 않은 친구입니다.")
+        else:
+            print(f"{name}의 전화번호: {result.value}")
+            
+    elif command == 'd':
+        name = input("친구의 이름: ")
+        map.delete(name)
+        
+    elif command == 'p':
+        map.display()
+    
+    elif command == 'q':
+        break
